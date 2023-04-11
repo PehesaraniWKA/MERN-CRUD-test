@@ -1,0 +1,29 @@
+{error && <div className="error">{error}</div>}
+
+/*const updateSparepart = async (e) => {
+        e.preventDefault()
+
+        const sparePart = { name, price, discount, description }
+
+        //Fetch request to PATCH the sparepart
+        const response = await fetch(`/api/spareParts/${id}`, {
+            method: 'PATCH',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(sparePart)
+        })
+
+        const json = await response.json()
+
+        if (!response.ok) {
+            setError(json.error)
+        } else {
+            setName('')
+            setPrice('')
+            setDiscount('')
+            setDescription('')
+            setError(null)
+            console.log('Sparepart updated', json)
+            dispatch({ type: 'UPDATE_SPAREPART', payload: json })
+            navigate(`/spareparts/${id}`)
+        }
+    }*/
