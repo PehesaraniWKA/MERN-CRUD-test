@@ -31,7 +31,6 @@ const UpdateSparepartForm = () => {
       if (response.status === 200) {
         console.log("Data set");
         setData(response.data);
-
         setSparePartName(response.data.name);
         setSparePartPrice(response.data.price);
         setSparePartDiscount(response.data.discount);
@@ -96,7 +95,7 @@ const UpdateSparepartForm = () => {
         }}
       />
 
-      <Button variant="" onClick={updateSparepart}>
+      <Button variant="primary" onClick={updateSparepart}>
         Update Sparepart
       </Button>
       {error && <div className="error">{error}</div>}

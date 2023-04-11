@@ -12,8 +12,8 @@ function App() {
         <Navbar />
         <div className='pages'>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path="/UpdateSparepart/:id" element={<UpdateSparepart />} />
+            <Route path='/Home' element={<Home />} />
+            <Route path="/Home/UpdateSparepart/:id" element={<UpdateSparepart />} />
           </Routes>
         </div>
       </BrowserRouter>
